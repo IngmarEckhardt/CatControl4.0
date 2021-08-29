@@ -1,0 +1,39 @@
+@import url('./myapp/styles.css');
+@import url('./myapp/main-layout.css');
+@import url('./myapp/lumo-css-framework/all-classes.css');
+html {
+      --lumo-size-xl: 4rem;
+      --lumo-size-l: 3rem;
+      --lumo-size-m: 2.5rem;
+      --lumo-size-s: 2rem;
+      --lumo-size-xs: 1.75rem;
+      --lumo-space-xl: 2.5rem;
+      --lumo-space-l: 1.75rem;
+      --lumo-space-m: 1.125rem;
+      --lumo-space-s: 0.75rem;
+      --lumo-space-xs: 0.375rem;
+
+    }
+
+    [theme~="dark"] {
+
+    }
+.main-view .frontseite {
+    display: flex;
+}
+
+.main-view .cat-grid {
+    flex: 2;
+}
+
+.main-view .catedit-gui {
+    flex: 1;
+    padding: var(--lumo-space-m);
+}
+
+@media all and (max-width: 1100px) {
+    .main-view.editing .toolbar,
+    .main-view.editing .cat-grid {
+        display: none;
+   }
+}
